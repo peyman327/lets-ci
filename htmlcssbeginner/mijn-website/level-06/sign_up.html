@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Inschrijven Bit Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Inschrijven bij de Bit Academy</h1>
+
+    <form class="signup-form" action="#">
+
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" placeholder="voorbeeld@mail.nl" required>
+
+        <label for="phone">Telefoonnummer</label>
+        <input type="tel" id="phone" name="phone" placeholder="06 12345678" required>
+
+        <label for="pin">Pincode</label>
+        <input type="password" id="pin" name="pin" placeholder="4-cijferige pincode" maxlength="4" inputmode="numeric" required>
+
+        <label for="province">Provincie</label>
+        <select id="province" name="province" required>
+            <option value="">Kies je provincie</option>
+            <option value="Drenthe">Drenthe</option>
+            <option value="Flevoland">Flevoland</option>
+            <option value="Friesland">Friesland</option>
+            <option value="Gelderland">Gelderland</option>
+            <option value="Groningen">Groningen</option>
+            <option value="Limburg">Limburg</option>
+            <option value="Noord-Brabant">Noord-Brabant</option>
+            <option value="Noord-Holland">Noord-Holland</option>
+            <option value="Overijssel">Overijssel</option>
+            <option value="Utrecht">Utrecht</option>
+            <option value="Zeeland">Zeeland</option>
+            <option value="Zuid-Holland">Zuid-Holland</option>
+        </select>
+
+        <label>Houd je van voetbal?</label>
+        <label>
+            <input type="radio" name="football" value="ja" required>
+            Ja
+        </label>
+        <label>
+            <input type="radio" name="football" value="nee">
+            Nee
+        </label>
+
+        <label>Favoriete dagen van de week</label>
+        <label><input type="checkbox" name="days[]" value="maandag"> Maandag</label>
+        <label><input type="checkbox" name="days[]" value="dinsdag"> Dinsdag</label>
+        <label><input type="checkbox" name="days[]" value="woensdag"> Woensdag</label>
+        <label><input type="checkbox" name="days[]" value="donderdag"> Donderdag</label>
+        <label><input type="checkbox" name="days[]" value="vrijdag"> Vrijdag</label>
+        <label><input type="checkbox" name="days[]" value="zaterdag"> Zaterdag</label>
+        <label><input type="checkbox" name="days[]" value="zondag"> Zondag</label>
+
+        <label for="remarks">Opmerkingen</label>
+        <textarea id="remarks" name="remarks" placeholder="Laat hier je opmerkingen achter..."></textarea>
+
+        <input type="submit" value="Inschrijven">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.ptable {
+  border-collapse: collapse;
+}
+
+.head,
+.side {
+  background: #f2f2f2;
+  font-size: 34px;
+  font-weight: 500;
+  padding: 14px 18px;
+  color: #333;
+}
+
+.head {
+  text-align: center;
+}
+
+.side {
+  text-align: left;
+}
+
+.cell {
+  width: 95px;
+  height: 95px;
+  border: 2px solid #1f4f7a;
+  padding: 0;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.empty {
+  width: 95px;
+  height: 95px;
+  border: none;
+  background: transparent;
+}
+
+.orange { background: #ffa77a; }
+.purple { background: #e6b1e6; }
+.blue   { background: #9fd0ff; }
+.yellow { background: #fff29a; }
+
+/* Hydrogen tekst groen maken */
+.hydrogen .element {
+  color: green;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.symbol {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.cell:hover {
+  background: #b7ff00;   
+}
+
+.cell:hover .element {
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;          
+    gap: 20px;            
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px;
+}
+
+form label,
+form input,
+form textarea {
+    margin-bottom: 10px;
+}
