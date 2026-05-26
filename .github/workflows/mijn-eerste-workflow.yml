@@ -1,0 +1,21 @@
+# De naam van je workflow. Deze naam zie je terug in de 'Actions'-tab van je GitHub repository.
+name: Mijn Eerste Workflow
+
+# Bepaalt wanneer de workflow moet worden uitgevoerd.
+# 'on: [push]' betekent dat de workflow start bij elke 'git push' naar de repository.
+on: [push]
+
+# Groepeert alle taken (jobs) die deze workflow moet uitvoeren.
+jobs:
+  # Definieert een taak met de ID 'build'. Dit is een zelfgekozen naam.
+  build:
+    # Specificeert op welk type besturingssysteem de taak moet draaien.
+    # 'ubuntu-latest' is een standaard, door GitHub beheerde virtuele machine.
+    runs-on: ubuntu-latest
+
+    # Definieert de reeks stappen die binnen deze taak moeten worden uitgevoerd.
+    steps:
+      # Dit is de eerste stap. Je geeft het een duidelijke naam.
+      - name: Print een welkomstbericht
+        # Het 'run'-commando voert een shell-commando uit.
+        run: echo "I'm running my first job!"
