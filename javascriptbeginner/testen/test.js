@@ -1,17 +1,13 @@
-let rating = Number(process.argv[2]);
-let natuur = Number(process.argv[3]);
-let autoweg = Number(process.argv[4]);
+const woorden = ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"];
 
-console.log("rating:", rating);
-console.log("natuurgebied:", natuur);
-console.log("autoweg:", autoweg);
+zoekLetter(woorden, "o");
+zoekLetter(woorden, "p");
+zoekLetter(woorden, "q");
 
-if (rating === 3 && natuur > 25) {
-    console.log("belastingkorting voor de inwoners");
-} else if (rating === 3 && natuur <= 25) {
-    console.log("subsidie voor aanleg van meer natuur");
-} else if (rating < 3 && autoweg > 200) {
-    console.log("subsidie voor ombouwen autoweg naar fietsstraat");
-} else {
-    console.log("subsidie voor afvalinzameling");
+function zoekLetter(array, letter) {
+    for (let woord of array) {
+        if (woord.includes(letter)) {
+            console.log(woord + " bevat de letter '" + letter + "'");
+        }
+    }
 }

@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-void printSchaakbord() {
-    for(int rij = 0; rij < 8; rij++) {
-        for(int kolom = 0; kolom < 8; kolom++) {
-
-            if((rij + kolom) % 2 == 0) {
+int main() {
+    for (int i = 0; i < 8; i++) {
+        printf("> ");
+        
+        for (int j = 0; j < 8; j++) {
+            if ((i + j) % 2 == 0) {
                 printf("|*");
             } else {
                 printf("|#");
             }
         }
-        printf("|\n");  
-    }
-}
 
-int main() {
-    printSchaakbord();
+        printf("|\n");
+    }
+
     return 0;
 }

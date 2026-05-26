@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>My Kitchen Aid 2.0</title>
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Cookie banner</title>
-    </head>
-
-    <body>
-        <div id="cookie-banner">
-            <p>Mogen we cookies gebruiken?</p>
-            <div class="buttons">
-                <button id="accept-knop">Accept</button>
-                <button id="reject-knop">Reject</button>
-            </div>
+    <div class="kitchen-aid">
+        <h1>KitchenAid 2.0</h1>
+        <div class="row">
+            <label for="invoer">Invoer:</label>
+            <input type="text" id="invoer">
+        </div>
+        <div class="row">
+            <label for="start-eenheid">Start Eenheid</label>
+            <select name="start-eenheid" id="start-eenheid">
+                <option value="ml">ml</option>
+                <option value="cl">cl</option>
+                <option value="dl">dl</option>
+                <option value="l">l</option>
+            </select>
         </div>
 
-        <script src="script.js"></script>
-    </body>
-
+        <div class="row">
+            <label for="convert-eenheid">Gewenste Eenheid</label>
+            <select name="convert-eenheid" id="convert-eenheid">
+                <option value="ml">ml</option>
+                <option value="cl">cl</option>
+                <option value="dl">dl</option>
+                <option value="l">l</option>
+            </select>
+        </div>
+        <p id="output">-</p>
+    </div>
+</body>
 </html>

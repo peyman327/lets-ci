@@ -1,22 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    float prijsExcl, btwBedrag, totaalPrijs;
-    const float btwPercentage = 0.21; 
+    float price;
+    float tax;
 
-    printf("Voer de prijs van het product in (exclusief BTW): ");
-    scanf("%f", &prijsExcl);
+    printf("> Enter the price of the product:\n");
+    printf("$ ");
+    scanf("%f", &price);
 
-    btwBedrag = prijsExcl * btwPercentage;
-    
-    totaalPrijs = prijsExcl + btwBedrag;
+    tax = price * 21 / 121;
 
-    printf("\n--- BTW Berekening (21%%) ---\n");
-    printf("Prijs excl. BTW:  EUR %.2f\n", prijsExcl);
-    printf("BTW bedrag:       EUR %.2f\n", btwBedrag);
-    printf("Totaalprijs:      EUR %.2f\n", totaalPrijs);
+    printf("> The tax is %.6f\n", tax);
 
     return 0;
 }
-
-    

@@ -1,10 +1,22 @@
-#cookie-banner {
-    width: 400px;
-    height: 80px;
-    background-color: #403d39;
-    color: #fffcf2;
-    border-radius: 25px;
+.kitchen-aid {
+    width: 250px;
+    margin: 50px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, select {
+    width: 100px;
+}
+
+p {
+    font-weight: bold;
+    font-size: large;
+    text-align: end;
 }
