@@ -1,0 +1,22 @@
+name: Variables Demo
+
+on:
+  push:
+
+env:
+  GLOBAL_MESSAGE: "Dit is een globale variabele"
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    env:
+      LOCAL_MESSAGE: "Dit is een lokale variabele"
+
+    steps:
+      - name: Toon variabelen
+        run: |
+          echo "Dit is een hardcoded string"
+          echo $GLOBAL_MESSAGE
+          echo $LOCAL_MESSAGE
+          echo $GITHUB_JOB
